@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quick Recharge - Mobile Recharge V2</title>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Mobile Recharge App - Version 2</h1>
+    <p>Simple HTML Structure (Day 2)</p>
+  </div>
+  <nav>
+    <a href="login.html">Login</a> |
+    <a href="signup.html">Signup</a> |
+    <a href="recharge.html">Quick Recharge</a> |
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+  <hr />
+</header>
+
+  <main>
+    <h2>Quick Mobile Recharge</h2>
+    <form action="#" method="post">
+      <label for="qrMobile">Mobile Number</label><br />
+      <input type="text" id="qrMobile" name="qrMobile" /><br /><br />
+
+      <label for="qrOperator">Operator</label><br />
+      <select id="qrOperator" name="qrOperator">
+        <option value="">-- Select Operator --</option>
+        <option value="jio">Jio</option>
+        <option value="airtel">Airtel</option>
+        <option value="vi">VI</option>
+        <option value="bsnl">BSNL</option>
+      </select><br /><br />
+
+      <label for="qrCircle">Circle/Region</label><br />
+      <select id="qrCircle" name="qrCircle">
+        <option value="">-- Select Circle --</option>
+        <option value="tn">Tamil Nadu</option>
+        <option value="ka">Karnataka</option>
+        <option value="mh">Maharashtra</option>
+      </select><br /><br />
+
+      <p>Recharge Type</p>
+      <input type="radio" id="qrPrepaid" name="qrType" value="prepaid" />
+      <label for="qrPrepaid">Prepaid</label>
+      <input type="radio" id="qrPostpaid" name="qrType" value="postpaid" />
+      <label for="qrPostpaid">Postpaid</label><br /><br />
+
+      <label for="qrAmount">Amount</label><br />
+      <input type="number" id="qrAmount" name="qrAmount" /><br /><br />
+
+      <button type="submit">Next: View Plans</button>
+    </form>
+  </main>
+  <footer>
+    <hr />
+    <p>&copy; 2025 Mobile Recharge App V2</p>
+  </footer>
+</body>
+</html>
