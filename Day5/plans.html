@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Plans - Mobile Recharge V2</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 min-h-screen text-slate-100">
+  <div class="max-w-6xl mx-auto p-6 space-y-6">
+    <header class="flex items-center justify-between">
+      <div>
+        <h1 class="text-3xl font-bold text-emerald-400">Recharge Plans</h1>
+        <p class="text-sm text-slate-400">Loaded dynamically from MockAPI (Day 5 V2)</p>
+      </div>
+    </header>
+
+    <div id="status" class="text-sm text-slate-300 bg-slate-900/70 border border-slate-700 rounded-xl px-4 py-2">
+      Loading plans...
+    </div>
+
+    <section id="plansContainer" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- Plans will be inserted here -->
+    </section>
+
+    <section id="selectedPlan" class="hidden bg-slate-900/70 border border-slate-700 rounded-2xl p-6">
+      <h2 class="text-2xl font-semibold mb-2 text-emerald-400">Selected Plan</h2>
+      <p id="selectedPlanDetails" class="text-sm text-slate-200 mb-4"></p>
+      <button
+        id="proceedBtn"
+        class="bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold px-4 py-2 rounded-xl text-sm transition"
+      >
+        Proceed to Payment (Dummy)
+      </button>
+    </section>
+  </div>
+
+  <script src="plans.js"></script>
+</body>
+</html>
